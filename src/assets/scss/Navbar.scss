@@ -1,0 +1,74 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgb(235, 235, 235);
+  height: 100vh;
+  position: fixed;
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+  }
+  .nav-link {
+    padding: 10px 20px;
+    background-color: bisque;
+    margin: 10px 0;
+    font-size: 20px;
+    border-radius: 6px;
+    text-align: center;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), color 0.4s;
+    color: inherit;
+    overflow: hidden;
+    position: relative;
+    .link-text {
+      margin: 0;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      display: flex;
+      align-content: center;
+    }
+    svg {
+      margin-right: 10px;
+    }
+  }
+  //Animation
+
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to left, red 0%, red 100%);
+    z-index: 0;
+    transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 6px; /* match parent if using border-radius */
+  }
+
+  .nav-link:hover {
+    transform: translateX(50%);
+  }
+  .nav-link:hover::before {
+    width: 100%;
+  }
+
+  .nav-link a,
+  .nav-link .link-text,
+  .nav-link svg {
+    position: relative;
+    z-index: 1;
+    transition: color 0.4s;
+  }
+
+  .nav-link:hover a,
+  .nav-link:hover .link-text,
+  .nav-link:hover svg {
+    color: #fff;
+    fill: #fff;
+  }
+}
