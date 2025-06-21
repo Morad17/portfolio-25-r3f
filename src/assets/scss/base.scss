@@ -1,6 +1,8 @@
 @import "./Home.scss";
 @import "./Navbar.scss";
 
-/*--------General Styles--------*/
-
 /*--------Variables--------*/
+/*--------General Styles--------*/
+.App {
+  display: flex;
+}

@@ -9,27 +9,35 @@ const navbar = () => {
       <div className="logo">Logo</div>
       <ul className="nav-links">
         <li className="nav-link">
-          <a href="">
-            <CgProfile />
-            <p className="link-text">About</p>
+          <a className="link" href="/">
+            <div className="link-div">
+              <CgProfile />
+            </div>
           </a>
+          <p className="link-text">About</p>
         </li>
         <li className="nav-link">
-          <a href="">
-            <SiCodecrafters />
-            <p className="link-text">Skills</p>
+          <a className="link" href="/">
+            <div className="link-div">
+              <SiCodecrafters />
+            </div>
           </a>
+          <p className="link-text">Skills</p>
         </li>
         <li className="nav-link">
-          <a href="">
-            <PiProjectorScreenChartLight />
-            <p className="link-text">Projects</p>
+          <a className="link" href="/">
+            <div className="link-div">
+              <PiProjectorScreenChartLight />
+            </div>
           </a>
+          <p className="link-text">Projects</p>
         </li>
         <li className="nav-link">
-          <a href="">
-            <FaRegPaperPlane />
-            <p className="link-text"> Contact</p>
+          <p className="link-text"> Contact</p>
+          <a className="link" href="/">
+            <div className="link-div">
+              <FaRegPaperPlane />
+            </div>
           </a>
         </li>
       </ul>
