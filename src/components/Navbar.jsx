@@ -3,7 +3,7 @@ import { SiCodecrafters } from "react-icons/si";
 import { PiProjectorScreenChartLight } from "react-icons/pi";
 import { FaRegPaperPlane } from "react-icons/fa";
 
-const navbar = () => {
+const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logo">Logo</div>
@@ -45,4 +45,4 @@ const navbar = () => {
   );
 };
 
-export default navbar;
+export default Navbar;
