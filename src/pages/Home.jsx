@@ -4,6 +4,7 @@ import { Environment } from "@react-three/drei";
 import { VikingShip } from "../components/Viking_Ship";
 
 const Home = () => {
+  //Content//
   return (
     <div className="home">
       <Canvas className="home" style={{ width: "100vw", height: "300px" }}>
